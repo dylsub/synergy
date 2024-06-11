@@ -29,7 +29,7 @@ body {
   margin: 5vh 7vw 0 7vw;
 }
 
-.title__content img {
+.title__content__header img {
   margin-left: -15px;
   margin-right: 20px;
   width: 32px;
@@ -67,8 +67,10 @@ body {
 }
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
   padding: 0 !important;
+  margin-bottom: 20px;
+  margin-top: 30px;
   font-size: 30px;
   text-align: center;
   height: 30vh;
@@ -177,4 +179,70 @@ body {
 
 .hide {
   display: none;
+}
+
+/* Login Modal */
+
+.login {
+  padding: 60px 50px;
+  width: 400px;
+  height: 500px;
+}
+
+.login__title {
+  display: flex;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+  /* background: coral; */
+}
+
+.login__title img {
+  margin-top: -45px;
+  height: 80px;
+}
+
+.login__title h1 {
+  font-size: 27px;
+  margin-bottom: 40px;
+  font-family: "Zen Dots", sans-serif;
+  margin-left: 15px;
+}
+
+.login h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.login input {
+  background-color: rgb(239, 237, 237);
+  font-size: 16px;
+  margin-bottom: 25px;
+  padding-left: 5px;
+  width: 300px;
+  height: 40px;
+  color: #888;
+}
+
+.login__submit {
+  cursor: pointer;
+  background: rgb(251,198,0);
+  color: black;
+  width: 80px;
+  border-radius: 8px;
+  text-align: center;
+  height: 35px;
+  padding-top: 5.5px;
+  margin-top: 20px;
+  transition: 0.1s;
+}
+
+.login__submit:hover {
+  background: rgb(83, 153, 238);
+  color: white;
+}
+
+input::placeholder {
+  color: rgb(185, 184, 186);
 }

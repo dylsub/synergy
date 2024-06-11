@@ -15,11 +15,35 @@
         {
             "id": 3,
             "name": "storeC",
-            "logo": "/sams.png",
+            "logo": "/sams.jpg",
             "savings_percent": 10
         },
         {
             "id": 4,
+            "name": "storeD",
+            "logo": "/sams.png",
+            "savings_percent": 15
+        },
+        {
+            "id": 5,
+            "name": "storeA",
+            "logo": "/chipotle.png",
+            "savings_percent": 5
+        },
+        {
+            "id": 6,
+            "name": "storeB",
+            "logo": "/sams.png",
+            "savings_percent": 12
+        },
+        {
+            "id": 7,
+            "name": "storeC",
+            "logo": "/chipotle.png",
+            "savings_percent": 10
+        },
+        {
+            "id": 8,
             "name": "storeD",
             "logo": "/sams.png",
             "savings_percent": 15
