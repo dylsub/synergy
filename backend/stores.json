@@ -1,0 +1,11 @@
+{
+    "stores": [
+        {
+            "id": 1,
+            "name": "storeA",
+            "logo": "/Chipotle.png",
+            "savings_percent": 5
+        }
+    ]
+}
+  
