@@ -1,14 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
+  overflow-x: hidden;
+  overflow-y: hidden;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main {
+  display: flex;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scroll-snap-type: mandatory;
+  scroll-behavior: smooth;
+  background: rgb(251,198,0);
+}
+
+.dashboard {
+  width: 80vw;
+  min-width: 80vw;
+  background: #ffffff;
+  scroll-snap-align: start;
+}
+
+.title__content {
+  margin: 5vh 7vw 0 7vw;
+}
+
+.title__content img {
+  margin-left: -15px;
+  margin-right: 20px;
+  width: 32px;
+}
+
+.title__content__header {
+  display: flex;
+  align-items: center;
+}
+
+.title__content__header h1 {
+  font-family: "Zen Dots", sans-serif;
+  font-size: 2.5rem;
+}
+
+.title__content p {
+  margin-top: 0;
+  font-size: 18px;
+  margin-left: 35px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.dashboard__content {
+  margin-top: 5vh;
+  height: 70vh;
+  width: 66vw;
+
+  /* background-color: lightblue; */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  /* background-color: #2196F3; */
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.5vh;
+  margin-bottom: 3.5vh;
+}
+
+
+
+
+
+/* Hero Page */
+
+.hero{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: calc(100vw - (100vw - 100%));
+  height: 100vh;
+  background-color: #343643;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("/public/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  display: flex;
+  justify-content: center;
+
+  scroll-snap-type: mandatory;
+  scroll-behavior: smooth;
+}
+
+.header {
+  height: 100vh;
+  width: 100vw;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+}
+
+.header__title{
+  font-family: "Zen Dots", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  font-size: 4.5rem;
+  width: auto;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.header__subtitle{
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: 2rem;
+  font-weight: 400;
+  width: auto;
+  text-align: center;
+  color: #d3d1d1;
+}
+
+.header__text {
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  width: 700px;
+  text-align: center;
+  color: #d3d1d1;
+}
+
+.header__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .header__link:first-of-type {
+  margin-right: 20px;
+} */
+.header__link {
+  width: auto;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  transition: 0.15s;
+}
+
+.header__link:hover {
+  background-color: white;
+  color: black;
+}
+
+.red {
+  color: #de6f6f;
+  font-weight: 800;
+}
+
+.hide {
+  display: none;
 }
