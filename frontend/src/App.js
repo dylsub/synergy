@@ -93,6 +93,18 @@ function App() {
         <div className="disclaimer__box">
           <h3 className="disclaimer">Spend at the respective venues to earn reward points and activate limited-time savings!</h3>
         </div>
+
+        <div class="mobile__socials">
+          <a href="https://www.instagram.com/synchrony/" target="_blank">
+              <ion-icon class="instagram social" name="logo-instagram"></ion-icon>
+          </a>
+          <a href="https://x.com/synchrony?lang=en" target="_blank">
+              <ion-icon class="twitter social" name="logo-twitter"></ion-icon>
+          </a>
+          <a href="https://www.facebook.com/SynchronyFinancial/" target="_blank">
+              <ion-icon class="facebook social" name="logo-facebook"></ion-icon>
+          </a>
+        </div>
         <h3 className="login__submit logoff__submit" onClick={handleLogoff}>Log Out</h3>
       </div>
   )

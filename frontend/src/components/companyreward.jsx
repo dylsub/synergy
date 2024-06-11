@@ -5,7 +5,7 @@ import styles from "./companyreward.module.css"; // Import CSS module
 function CompanyReward({ restaurant }) {
 
  
- const { name, logo, pointsReceived, threshold } = restaurant;
+ const { name, logo, pointsReceived, threshold, savings_percent, savings_limit } = restaurant;
  restaurant.pointsLeft = threshold - pointsReceived
  const totalPoints = threshold
 
@@ -125,9 +125,9 @@ const isComplete = restaurant.pointsLeft === 0
       <b><h2 className="">{name}</h2></b>
 
       {!isPressed && (
-        <h3 className={styles.header3}>Points left: {restaurant.pointsLeft}</h3>
+        <h3 className={styles.header3}>{`${isComplete ? "Redeem your reward!" : restaurant.pointsLeft + " points to go"}`}</h3>
       )}
-      <h3 className={styles.header3}>4% for 48 hrs</h3>
+      <h3 className={styles.header3}>{`${savings_percent}`}% off {"<"}${savings_limit} for 48 hrs</h3>
       {isPressed && (
         <h3 className={styles.header3}>Time left: {getFormattedTime()}</h3>
       )}

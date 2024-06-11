@@ -4,7 +4,8 @@
             "id": 1,
             "name": "Sams Club",
             "logo": "/sams.png",
-            "savings_percent": 5,
+            "savings_percent": 4,
+            "savings_limit": 500,
             "threshold": 1000
         },
         {
@@ -12,13 +13,15 @@
             "name": "Walgreens",
             "logo": "/walgreens.png",
             "savings_percent": 5,
+            "savings_limit": 200,
             "threshold": 1000
         },
         {
             "id": 3,
             "name": "Chipotle",
             "logo": "/chipotle.png",
-            "savings_percent": 10,
+            "savings_percent": 8,
+            "savings_limit": 750,
             "threshold": 1000
         },
         {
@@ -26,34 +29,39 @@
             "name": "Mattress Firm",
             "logo": "/mattress.png",
             "savings_percent": 10,
+            "savings_limit": 2000,
             "threshold": 1000
         },
         {
             "id": 6,
             "name": "JCPenny",
             "logo": "/jcpenny.jpeg",
-            "savings_percent": 10,
+            "savings_percent": 6,
+            "savings_limit": 100,
             "threshold": 1000
         },
         {
             "id": 8,
             "name": "McDonalds",
             "logo": "/mcdonalds.png",
-            "savings_percent": 10,
+            "savings_percent": 4,
+            "savings_limit": 50,
             "threshold": 1000
         },
         {
             "id": 9,
             "name": "Dick's",
             "logo": "/dicks.jpeg",
-            "savings_percent": 10,
+            "savings_percent": 5,
+            "savings_limit": 300,
             "threshold": 1000
         },
         {
             "id": 10,
             "name": "Adidas",
             "logo": "/adidas.jpeg",
-            "savings_percent": 10,
+            "savings_percent": 4,
+            "savings_limit": 150,
             "threshold": 1000
         }
 
