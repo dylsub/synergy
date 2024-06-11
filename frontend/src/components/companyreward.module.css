@@ -1,15 +1,111 @@
+.content {
+    width: 250px;
+    height: 240px;
+    /* background-color: coral; */
+    /* overflow-x: hidden;
+    overflow-y: hidden; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content__text {
+    text-align: center;
+}
+
+.content__image__container {
+    position: relative;
+    top: -166px;
+    left: 10px;
+    min-width: 156px !important;
+    max-width: 156px !important;
+    min-height: 156px !important;
+    max-height: 156px !important;
+    /* background: blue; */
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -160px;
+    overflow: hidden;
+}
+
+.content__image {
+    min-width: 100% !important;
+    max-width: 100% !important;
+}   
+
+
+.content__graphic .circle {
+    min-width: 175px !important;
+    max-width: 175px !important;
+    min-height: 175px !important;
+    max-height: 175px !important;
+}
+
+.content__graphic {
+    cursor: pointer;
+}
+
+.content__graphic:hover {
+    transform: scale(1.05);
+    /* rotate: 360deg; */
+    transition: 0.4s;
+}
+
+.circle path:hover {
+    
+}
+
+.pulse {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.spin {
+    animation: spin 0.4s linear;
+}
+  
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+      filter: brightness(5);
+    }
+    to {
+      transform: rotate(360deg);
+      filter: brightness(1);
+    }
+}
+
+@keyframes pulse {
+    0% {
+      stroke: rgb(92, 29, 193);
+    }
+    50% {
+      stroke: rgb(194, 162, 230);
+    }
+    100% {
+        stroke: rgb(92, 29, 193);
+    }
+  }
+
+
+
 .filter-green {
     filter: hue-rotate(100deg);
 }
    
    
 .bg-purple-500 {
-    background-color: #6b46c1; /* Tailwind's purple-500 color */
+    background-color: #6b46c1; /* Tailwind's purple-500 color */;
 }
    
    
-.text-white {
-    color: #fff;
+.header3 {
+    font-size: 15px;
+    margin-bottom: -5px;
+    color: #555;
 }
    
    
@@ -22,4 +118,6 @@
 .clicked-ring {
     stroke: #6b46c1; /* Tailwind's purple-500 color */
 }
+
+
    
