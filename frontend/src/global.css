@@ -243,6 +243,11 @@ body {
   color: white;
 }
 
+.logoff__submit {
+  background: #f5f5f5;
+  margin-left: 200px;
+}
+
 input::placeholder {
   color: rgb(185, 184, 186);
 }

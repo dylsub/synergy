@@ -5,14 +5,13 @@ import styles from "./companyreward.module.css"; // Import CSS module
 function CompanyReward({ restaurant }) {
 
  
- const { name, logo, pointsReceived, pointsLeft, totalPoints } = restaurant;
- restaurant.pointsReceived = 100
- restaurant.pointsLeft = 0
- restaurant.totalPoints = 100
+ const { name, logo, pointsReceived, threshold } = restaurant;
+ restaurant.pointsLeft = threshold - pointsReceived
+ const totalPoints = threshold
 
 
  const progress = (pointsReceived / totalPoints) * 100;
- const isComplete = pointsLeft === 0;
+ const isComplete = restaurant.pointsLeft === 0;
 
 
  const [isPressed, setIsPressed] = useState(false);
@@ -36,7 +35,6 @@ function CompanyReward({ restaurant }) {
    }
    return () => clearInterval(timerInterval);
  }, [isPressed]);
-
 
  const handlePress = () => {
    if (isComplete) {
@@ -93,7 +91,7 @@ function CompanyReward({ restaurant }) {
   
     <div className={styles.content__text}>
       <h2 className="">{name}</h2>
-      <h3 className={styles.header3}>Points left: {pointsLeft}</h3>
+      <h3 className={styles.header3}>Points left: {restaurant.pointsLeft}</h3>
 
       {!isPressed && (
         <h3 className={styles.header3}>4% for 48 hrs</h3>

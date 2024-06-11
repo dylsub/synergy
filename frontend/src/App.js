@@ -8,6 +8,7 @@ function App() {
   const [posts, setPosts] = useState([])
   const [stores, setStores] = useState([])
   const [isLogin, setIsLogin] = useState(true)
+  const [user, setUser] = useState({})
 
   useEffect(() => {
     async function fetchPosts() {
@@ -29,6 +30,31 @@ function App() {
 
   function handleModalClick() {
     setIsLogin(!isLogin)
+  }
+
+  function handleLogin(e) {
+    const username = document.getElementById("user").value
+    const password = document.getElementById("pass").value
+
+    setUser(posts.filter((post) => post.name == username)[0].rewards)
+
+    let rewards = posts.filter((post) => post.name == username)[0].rewards
+
+    let count = 0
+    for (const [key, value] of Object.entries(rewards)) {
+      stores[count].pointsReceived = value
+      count++
+    }
+
+    console.log(stores)
+
+    setIsLogin(!isLogin)
+    
+  }
+
+  function handleLogoff() {
+    setIsLogin(true)
+    window.location.reload()
   }
 
   return (
@@ -57,12 +83,14 @@ function App() {
               <h1>Please enter your login</h1>
             </div>
             <h2>Username</h2>
-            <input placeholder="Username"></input>
+            <input placeholder="Username" id="user"></input>
             <h2>Password</h2>
-            <input placeholder="Password"></input>
-            <h3 className="login__submit">Submit</h3>
+            <input placeholder="Password" id="pass"></input>
+            <h3 className="login__submit" onClick={handleLogin}>Submit</h3>
           </div>
         </Modal> }
+
+        <h3 className="login__submit logoff__submit" onClick={handleLogoff}>Log Out</h3>
       </div>
   )
 }

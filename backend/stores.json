@@ -17,14 +17,7 @@
         {
             "id": 3,
             "name": "Chipotle",
-            "logo": "/chiptole.png",
-            "savings_percent": 10,
-            "threshold": 1000
-        },
-        {
-            "id": 4,
-            "name": "American Eagle",
-            "logo": "/AE.jpeg",
+            "logo": "/chipotle.png",
             "savings_percent": 10,
             "threshold": 1000
         },
@@ -43,13 +36,6 @@
             "threshold": 1000
         },
         {
-            "id": 7,
-            "name": "H&M",
-            "logo": "/h&m.jpeg",
-            "savings_percent": 10,
-            "threshold": 1000
-        },
-        {
             "id": 8,
             "name": "McDonalds",
             "logo": "/mcdonalds.png",
@@ -58,7 +44,7 @@
         },
         {
             "id": 9,
-            "name": "Dick's Sporting Goods",
+            "name": "Dick's",
             "logo": "/dicks.jpeg",
             "savings_percent": 10,
             "threshold": 1000
@@ -66,7 +52,7 @@
         {
             "id": 10,
             "name": "Adidas",
-            "logo": "/adidas.png",
+            "logo": "/adidas.jpeg",
             "savings_percent": 10,
             "threshold": 1000
         }

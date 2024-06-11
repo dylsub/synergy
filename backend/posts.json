@@ -4,79 +4,69 @@
       "id": "1",
       "name": "Dhruv",
       "rewards": {
-        "Sams Club": 100,
-        "Walgreens": 50,
-        "Chipotle": 100,
-        "American Eagle": 100,
-        "Target": 100,
-        "JCPenny": 100,
-        "H&M": 100,
-        "McDonalds": 100,
-        "Dick's Sporting Goods": 100,
-        "Adidas": 100
+        "Sams Club": 1000,
+        "Walgreens": 500,
+        "Chipotle": 990,
+        "Target": 800,
+        "JCPenny": 750,
+        "McDonalds": 1000,
+        "Dick's": 800,
+        "Adidas": 700
       }
     },
     {
       "id": "2",
       "name": "Sash",
       "rewards": {
-        "Sams Club": 100,
-        "Walgreens": 50,
-        "Chipotle": 100,
-        "American Eagle": 100,
-        "Target": 100,
-        "JCPenny": 100,
-        "H&M": 100,
-        "McDonalds": 100,
-        "Dick's Sporting Goods": 100,
-        "Adidas": 100
+        "Sams Club": 900,
+        "Walgreens": 200,
+        "Chipotle": 1000,
+        "Target": 400,
+        "JCPenny": 600,
+        "McDonalds": 1000,
+        "Dick's": 100,
+        "Adidas": 10
       }
     },
     {
       "id": "3",
       "name": "Dylan",
       "rewards": {
-        "Sams Club": 100,
+        "Sams Club": 200,
         "Walgreens": 50,
         "Chipotle": 100,
-        "American Eagle": 100,
-        "Target": 100,
-        "JCPenny": 100,
-        "H&M": 100,
-        "McDonalds": 100,
-        "Dick's Sporting Goods": 990,
-        "Adidas": 100
+        "Target": 1000,
+        "JCPenny": 1000,
+        "McDonalds": 850,
+        "Dick's": 200,
+        "Adidas": 450
       }
     },
     {
       "id": "4",
       "name": "Ziad",
       "rewards": {
-        "Sams Club": 100,
-        "Walgreens": 50,
-        "Chipotle": 100,
-        "American Eagle": 100,
-        "Target": 100,
-        "JCPenny": 100,
-        "H&M": 100,
-        "McDonalds": 100,
-        "Dick's Sporting Goods": 100,
-        "Adidas": 100
+        "Sams Club": 50,
+        "Walgreens": 1000,
+        "Chipotle": 750,
+        "Target": 175,
+        "JCPenny": 200,
+        "McDonalds": 900,
+        "Dick's": 1000,
+        "Adidas": 800
       }
     },
     {
       "id": "5",
       "name": "Pedro",
       "rewards": {
-        "Sams Club": 100,
-        "Walgreens": 50,
-        "Chipotle": 100,
-        "American Eagle": 100,
-        "Target": 100,
-        "JCPenny": 100,
-        "H&M": 100,
-        "McDonalds": 100,
-        "Dick's Sporting Goods": 100,
+        "Sams Club": 200,
+        "Walgreens": 500,
+        "Chipotle": 500,
+        "Target": 1000,
+        "JCPenny": 950,
+        "McDonalds": 750,
+        "Dick's": 50,
         "Adidas": 100
       }
     }
