@@ -1,19 +1,83 @@
 {
   "posts": [
     {
-      "id": "user-1",
+      "id": "1",
       "name": "Dhruv",
       "rewards": {
-        "storeA": 100,
-        "storeB": 50
+        "Sams Club": 100,
+        "Walgreens": 50,
+        "Chipotle": 100,
+        "American Eagle": 100,
+        "Target": 100,
+        "JCPenny": 100,
+        "H&M": 100,
+        "McDonalds": 100,
+        "Dick's Sporting Goods": 100,
+        "Adidas": 100
       }
     },
     {
-      "id": "user-2",
+      "id": "2",
       "name": "Sash",
       "rewards": {
-        "storeA": 150,
-        "storeC": 80
+        "Sams Club": 100,
+        "Walgreens": 50,
+        "Chipotle": 100,
+        "American Eagle": 100,
+        "Target": 100,
+        "JCPenny": 100,
+        "H&M": 100,
+        "McDonalds": 100,
+        "Dick's Sporting Goods": 100,
+        "Adidas": 100
+      }
+    },
+    {
+      "id": "3",
+      "name": "Dylan",
+      "rewards": {
+        "Sams Club": 100,
+        "Walgreens": 50,
+        "Chipotle": 100,
+        "American Eagle": 100,
+        "Target": 100,
+        "JCPenny": 100,
+        "H&M": 100,
+        "McDonalds": 100,
+        "Dick's Sporting Goods": 990,
+        "Adidas": 100
+      }
+    },
+    {
+      "id": "4",
+      "name": "Ziad",
+      "rewards": {
+        "Sams Club": 100,
+        "Walgreens": 50,
+        "Chipotle": 100,
+        "American Eagle": 100,
+        "Target": 100,
+        "JCPenny": 100,
+        "H&M": 100,
+        "McDonalds": 100,
+        "Dick's Sporting Goods": 100,
+        "Adidas": 100
+      }
+    },
+    {
+      "id": "5",
+      "name": "Pedro",
+      "rewards": {
+        "Sams Club": 100,
+        "Walgreens": 50,
+        "Chipotle": 100,
+        "American Eagle": 100,
+        "Target": 100,
+        "JCPenny": 100,
+        "H&M": 100,
+        "McDonalds": 100,
+        "Dick's Sporting Goods": 100,
+        "Adidas": 100
       }
     }
   ]

@@ -2,28 +2,75 @@
     "stores": [
         {
             "id": 1,
-            "name": "storeA",
+            "name": "Sams Club",
             "logo": "/sams.png",
-            "savings_percent": 5
+            "savings_percent": 5,
+            "threshold": 1000
         },
         {
             "id": 2,
-            "name": "storeB",
-            "logo": "/sams.png",
-            "savings_percent": 12
+            "name": "Walgreens",
+            "logo": "/walgreens.png",
+            "savings_percent": 5,
+            "threshold": 1000
         },
         {
             "id": 3,
-            "name": "storeC",
-            "logo": "/sams.png",
-            "savings_percent": 10
+            "name": "Chipotle",
+            "logo": "/chiptole.png",
+            "savings_percent": 10,
+            "threshold": 1000
         },
         {
             "id": 4,
-            "name": "storeD",
-            "logo": "/sams.png",
-            "savings_percent": 15
+            "name": "American Eagle",
+            "logo": "/AE.jpeg",
+            "savings_percent": 10,
+            "threshold": 1000
+        },
+        {
+            "id": 5,
+            "name": "Target",
+            "logo": "/target.png",
+            "savings_percent": 10,
+            "threshold": 1000
+        },
+        {
+            "id": 6,
+            "name": "JCPenny",
+            "logo": "/jcpenny.jpeg",
+            "savings_percent": 10,
+            "threshold": 1000
+        },
+        {
+            "id": 7,
+            "name": "H&M",
+            "logo": "/h&m.jpeg",
+            "savings_percent": 10,
+            "threshold": 1000
+        },
+        {
+            "id": 8,
+            "name": "McDonalds",
+            "logo": "/mcdonalds.png",
+            "savings_percent": 10,
+            "threshold": 1000
+        },
+        {
+            "id": 9,
+            "name": "Dick's Sporting Goods",
+            "logo": "/dicks.jpeg",
+            "savings_percent": 10,
+            "threshold": 1000
+        },
+        {
+            "id": 10,
+            "name": "Adidas",
+            "logo": "/adidas.png",
+            "savings_percent": 10,
+            "threshold": 1000
         }
+
     ]
 }
   
