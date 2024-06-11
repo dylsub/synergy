@@ -3,24 +3,9 @@ import "./global.css"
 
 import CompanyReward from "./components/companyreward";
 
-
-const pointsReceived = 500;
-const totalPoints = 500;
-const restaurant = {
-  name: "Chipotle",
-  logo: "/sams.png", // Absolute path to the image in the public folder
-  pointsReceived,
-  totalPoints,
-  pointsLeft: totalPoints - pointsReceived,
-};
-
-
-
 function App() {
   const [posts, setPosts] = useState([])
   const [stores, setStores] = useState([])
-
-  const companies = [<CompanyReward restaurant={restaurant} />, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
   useEffect(() => {
     async function fetchPosts() {
@@ -52,7 +37,7 @@ function App() {
             <div className="dashboard__content">
               <div className="grid-container">
                 {stores.map((store) => {
-                  return <CompanyReward restaurant={store}></CompanyReward>
+                  return <div className="grid-item"> <CompanyReward restaurant={store}></CompanyReward> </div>
                 })}
               </div>
             </div>

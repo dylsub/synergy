@@ -66,7 +66,7 @@ function CompanyReward({ restaurant }) {
        <img
          src={logo}
          alt={`${name} logo`}
-         className={`w-32 h-32 rounded-full object-cover ${
+         className={`rounded-full ${
            isComplete ? styles.filterGreen : ""
          }`}
        />
