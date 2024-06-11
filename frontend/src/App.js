@@ -90,6 +90,9 @@ function App() {
           </div>
         </Modal> }
 
+        <div className="disclaimer__box">
+          <h3 className="disclaimer">Spend at the respective venues to earn reward points and activate limited-time savings!</h3>
+        </div>
         <h3 className="login__submit logoff__submit" onClick={handleLogoff}>Log Out</h3>
       </div>
   )

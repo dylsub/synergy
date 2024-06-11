@@ -23,8 +23,8 @@
         },
         {
             "id": 5,
-            "name": "Target",
-            "logo": "/target.png",
+            "name": "Mattress Firm",
+            "logo": "/mattress.png",
             "savings_percent": 10,
             "threshold": 1000
         },

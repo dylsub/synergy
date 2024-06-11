@@ -17,8 +17,9 @@
 
 .content__image__container {
     position: relative;
-    top: -166px;
-    left: 10px;
+    top: -167px;
+    left: 9.5px;
+    background: white;
     min-width: 156px !important;
     max-width: 156px !important;
     min-height: 156px !important;
@@ -63,6 +64,10 @@
     animation: pulse 2s ease-in-out infinite;
 }
 
+.pulse2 {
+    animation: pulse2 2s ease-in-out infinite;
+}
+
 .spin {
     animation: spin 0.4s linear;
 }
@@ -80,15 +85,28 @@
 
 @keyframes pulse {
     0% {
-      stroke: rgb(92, 29, 193);
+      stroke: rgb(121, 64, 213);
     }
     50% {
-      stroke: rgb(194, 162, 230);
+      stroke: rgb(211, 186, 238);
     }
     100% {
-        stroke: rgb(92, 29, 193);
+        stroke: rgb(121, 64, 213);
     }
   }
+
+
+@keyframes pulse2 {
+    0% {
+        stroke: #1c871f;
+    }
+    50% {
+        stroke: #c2f1c4;
+    }
+    100% {
+        stroke: #1c871f;
+    }
+}
 
 
 
