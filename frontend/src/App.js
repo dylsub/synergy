@@ -33,12 +33,17 @@ function App() {
   }
 
   function handleLogin(e) {
-    const username = document.getElementById("user").value
-    const password = document.getElementById("pass").value
+    const username = document.getElementById("user").value.toLowerCase()
+    const password = document.getElementById("pass").value.toLowerCase()
 
-    setUser(posts.filter((post) => post.name == username)[0].rewards)
+    let rewards;
+    try {
+      setUser(posts.filter((post) => post.name.toLowerCase() == username && post.pass.toLowerCase() == password)[0].rewards)
 
-    let rewards = posts.filter((post) => post.name == username)[0].rewards
+      rewards = posts.filter((post) => post.name.toLowerCase() == username && post.pass.toLowerCase() == password)[0].rewards
+    } catch (Exception) {
+      return;
+    }
 
     let count = 0
     for (const [key, value] of Object.entries(rewards)) {
@@ -85,7 +90,7 @@ function App() {
             <h2>Username</h2>
             <input placeholder="Username" id="user"></input>
             <h2>Password</h2>
-            <input placeholder="Password" id="pass"></input>
+            <input placeholder="Enter 12345" id="pass"></input>
             <h3 className="login__submit" onClick={handleLogin}>Submit</h3>
           </div>
         </Modal> }
@@ -94,7 +99,7 @@ function App() {
           <h3 className="disclaimer">Spend at the respective venues to earn reward points and activate limited-time savings!</h3>
         </div>
 
-        <div class="mobile__socials">
+        <div className="mobile__socials">
           <a href="https://www.instagram.com/synchrony/" target="_blank">
               <ion-icon class="instagram social" name="logo-instagram"></ion-icon>
           </a>
@@ -105,7 +110,7 @@ function App() {
               <ion-icon class="facebook social" name="logo-facebook"></ion-icon>
           </a>
         </div>
-        <h3 className="login__submit logoff__submit" onClick={handleLogoff}>Log Out</h3>
+        <h3 class="login__submit logoff__submit" onClick={handleLogoff}>Log Out</h3>
       </div>
   )
 }

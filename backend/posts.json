@@ -3,6 +3,7 @@
     {
       "id": "1",
       "name": "Dhruv",
+      "pass": "12345",
       "rewards": {
         "Sams Club": 1000,
         "Walgreens": 500,
@@ -17,6 +18,7 @@
     {
       "id": "2",
       "name": "Sash",
+      "pass": "12345",
       "rewards": {
         "Sams Club": 900,
         "Walgreens": 200,
@@ -31,6 +33,7 @@
     {
       "id": "3",
       "name": "Dylan",
+      "pass": "12345",
       "rewards": {
         "Sams Club": 200,
         "Walgreens": 50,
@@ -45,6 +48,7 @@
     {
       "id": "4",
       "name": "Ziad",
+      "pass": "12345",
       "rewards": {
         "Sams Club": 50,
         "Walgreens": 1000,
@@ -59,6 +63,7 @@
     {
       "id": "5",
       "name": "Pedro",
+      "pass": "12345",
       "rewards": {
         "Sams Club": 200,
         "Walgreens": 500,
