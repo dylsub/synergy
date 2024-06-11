@@ -5,7 +5,7 @@ import styles from "./companyreward.module.css"; // Import CSS module
 function CompanyReward({ restaurant }) {
 
  
- const { name, logo, pointsReceived, threshold, savings_percent, savings_limit } = restaurant;
+ const { name, logo, pointsReceived, threshold, savings_percent, savings_limit, savings_time } = restaurant;
  restaurant.pointsLeft = threshold - pointsReceived
  const totalPoints = threshold
 
@@ -42,7 +42,7 @@ const isComplete = restaurant.pointsLeft === 0
    if (isComplete) {
     setIsSpinning(true);
     setIsPressed(true);
-    setTimer(48 * 3600); // 48 hours in seconds
+    setTimer(savings_time * 3600); // 48 hours in seconds
     setTimeout(() => {
       setIsSpinning(false);
     }, 400); // The duration of the animation in milliseconds
@@ -127,7 +127,7 @@ const isComplete = restaurant.pointsLeft === 0
       {!isPressed && (
         <h3 className={styles.header3}>{`${isComplete ? "Redeem your reward!" : restaurant.pointsLeft + " points to go"}`}</h3>
       )}
-      <h3 className={styles.header3}>{`${savings_percent}`}% off {"<"}${savings_limit} for 48 hrs</h3>
+      <h3 className={styles.header3}>{`${savings_percent}`}% off {"<"}${savings_limit} for {savings_time} hrs</h3>
       {isPressed && (
         <h3 className={styles.header3}>Time left: {getFormattedTime()}</h3>
       )}
