@@ -1,0 +1,25 @@
+.filter-green {
+    filter: hue-rotate(100deg);
+}
+   
+   
+.bg-purple-500 {
+    background-color: #6b46c1; /* Tailwind's purple-500 color */
+}
+   
+   
+.text-white {
+    color: #fff;
+}
+   
+   
+.hover-full:hover {
+    background-color: #4c51bf; /* Tailwind's purple-700 color */
+    cursor: pointer;
+}
+   
+   
+.clicked-ring {
+    stroke: #6b46c1; /* Tailwind's purple-500 color */
+}
+   
