@@ -3,7 +3,12 @@ import styles from "./companyreward.module.css"; // Import CSS module
 
 
 function CompanyReward({ restaurant }) {
+
+ 
  const { name, logo, pointsReceived, pointsLeft, totalPoints } = restaurant;
+ restaurant.pointsReceived = 100
+ restaurant.pointsLeft = 0
+ restaurant.totalPoints = 100
 
 
  const progress = (pointsReceived / totalPoints) * 100;
